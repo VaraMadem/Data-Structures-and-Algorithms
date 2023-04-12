@@ -1,0 +1,113 @@
+==3524== Memcheck, a memory error detector
+==3524== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3524== Using Valgrind-3.17.0-07f0cdcbb4-20210319X and LibVEX; rerun with -h for copyright info
+==3524== Command: ./Lex infile1.txt outfile1.txt
+==3524== 
+--3524-- Valgrind options:
+--3524--    --leak-check=full
+--3524--    -v
+--3524-- Contents of /proc/version:
+--3524--   Linux version 3.10.0-1160.76.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed Aug 10 16:21:17 UTC 2022
+--3524-- 
+--3524-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand-rdseed
+--3524-- Page sizes: currently 4096, max supported 4096
+--3524-- Valgrind library directory: /opt/rh/devtoolset-11/root/usr/libexec/valgrind
+--3524-- Reading syms from /afs/cats.ucsc.edu/users/a/vmadem/cse101/vmadem/pa1/Lex
+--3524-- Reading syms from /usr/lib64/ld-2.17.so
+--3524--   Considering /usr/lib/debug/.build-id/62/c449974331341bb08dcce3859560a22af1e172.debug ..
+--3524--   .. build-id is valid
+--3524-- Reading syms from /opt/rh/devtoolset-11/root/usr/libexec/valgrind/memcheck-amd64-linux
+--3524--    object doesn't have a symbol table
+--3524--    object doesn't have a dynamic symbol table
+--3524-- Scheduler: using generic scheduler lock implementation.
+--3524-- Reading suppressions file: /opt/rh/devtoolset-11/root/usr/libexec/valgrind/default.supp
+==3524== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-3524-by-vmadem-on-unix5.lt.ucsc.edu
+==3524== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-3524-by-vmadem-on-unix5.lt.ucsc.edu
+==3524== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-3524-by-vmadem-on-unix5.lt.ucsc.edu
+==3524== 
+==3524== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==3524== don't want to do, unless you know exactly what you're doing,
+==3524== or are doing some strange experiment):
+==3524==   /opt/rh/devtoolset-11/root/usr/libexec/valgrind/../../bin/vgdb --pid=3524 ...command...
+==3524== 
+==3524== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==3524==   /path/to/gdb ./Lex
+==3524== and then give GDB the following command
+==3524==   target remote | /opt/rh/devtoolset-11/root/usr/libexec/valgrind/../../bin/vgdb --pid=3524
+==3524== --pid is optional if only one valgrind process is running
+==3524== 
+--3524-- REDIR: 0x4019e40 (ld-linux-x86-64.so.2:strlen) redirected to 0x580cd495 (???)
+--3524-- REDIR: 0x4019c10 (ld-linux-x86-64.so.2:index) redirected to 0x580cd4af (???)
+--3524-- Reading syms from /opt/rh/devtoolset-11/root/usr/libexec/valgrind/vgpreload_core-amd64-linux.so
+--3524-- Reading syms from /opt/rh/devtoolset-11/root/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so
+==3524== WARNING: new redirection conflicts with existing -- ignoring it
+--3524--     old: 0x04019e40 (strlen              ) R-> (0000.0) 0x580cd495 ???
+--3524--     new: 0x04019e40 (strlen              ) R-> (2007.0) 0x04c30990 strlen
+--3524-- REDIR: 0x4019dc0 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c31aa0 (strcmp)
+--3524-- REDIR: 0x401aa80 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c35b30 (mempcpy)
+--3524-- Reading syms from /usr/lib64/libc-2.17.so
+--3524--   Considering /usr/lib/debug/.build-id/94/70e279388f7f9cb2ed3b2872d0c2095b191ff4.debug ..
+--3524--   .. build-id is valid
+--3524-- REDIR: 0x4ecb1d0 (libc.so.6:strcasecmp) redirected to 0x4a247af (_vgnU_ifunc_wrapper)
+--3524-- REDIR: 0x4ec7f40 (libc.so.6:strnlen) redirected to 0x4a247af (_vgnU_ifunc_wrapper)
+--3524-- REDIR: 0x4ecd4d0 (libc.so.6:strncasecmp) redirected to 0x4a247af (_vgnU_ifunc_wrapper)
+--3524-- REDIR: 0x4eca9a0 (libc.so.6:memset) redirected to 0x4a247af (_vgnU_ifunc_wrapper)
+--3524-- REDIR: 0x4eca950 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a247af (_vgnU_ifunc_wrapper)
+--3524-- REDIR: 0x4ec9930 (libc.so.6:__GI_strrchr) redirected to 0x4c30350 (__GI_strrchr)
+--3524-- REDIR: 0x4ec0740 (libc.so.6:malloc) redirected to 0x4c2afe0 (malloc)
+--3524-- REDIR: 0x4ee0a10 (libc.so.6:__GI_strstr) redirected to 0x4c35dc0 (__strstr_sse2)
+--3524-- REDIR: 0x4eca030 (libc.so.6:memchr) redirected to 0x4c31b40 (memchr)
+--3524-- REDIR: 0x4ecfc30 (libc.so.6:__GI_memcpy) redirected to 0x4c32750 (__GI_memcpy)
+--3524-- REDIR: 0x4ec1160 (libc.so.6:calloc) redirected to 0x4c2f72e (calloc)
+--3524-- REDIR: 0x4ec7e10 (libc.so.6:strlen) redirected to 0x4a247af (_vgnU_ifunc_wrapper)
+--3524-- REDIR: 0x4faa8b0 (libc.so.6:__strlen_sse2_pminub) redirected to 0x4c308d0 (strlen)
+--3524-- REDIR: 0x4ec7850 (libc.so.6:strcpy) redirected to 0x4a247af (_vgnU_ifunc_wrapper)
+--3524-- REDIR: 0x4ed57d0 (libc.so.6:__strcpy_sse2_unaligned) redirected to 0x4c309b0 (strcpy)
+==3524== Invalid write of size 1
+==3524==    at 0x4C309E3: strcpy (vg_replace_strmem.c:523)
+==3524==    by 0x4013D6: main (Lex.c:55)
+==3524==  Address 0x52095e4 is 0 bytes after a block of size 4 alloc'd
+==3524==    at 0x4C2F7C8: calloc (vg_replace_malloc.c:1117)
+==3524==    by 0x4013AA: main (Lex.c:54)
+==3524== 
+--3524-- REDIR: 0x4ec63c0 (libc.so.6:strcmp) redirected to 0x4a247af (_vgnU_ifunc_wrapper)
+--3524-- REDIR: 0x4f79fc0 (libc.so.6:__strcmp_sse42) redirected to 0x4c31a50 (__strcmp_sse42)
+--3524-- REDIR: 0x4ec7e60 (libc.so.6:__GI_strlen) redirected to 0x4c308f0 (__GI_strlen)
+==3524== Invalid read of size 1
+==3524==    at 0x4C30904: __GI_strlen (vg_replace_strmem.c:470)
+==3524==    by 0x4EA9FB4: fputs (iofputs.c:34)
+==3524==    by 0x401567: main (Lex.c:86)
+==3524==  Address 0x5209816 is 0 bytes after a block of size 6 alloc'd
+==3524==    at 0x4C2F7C8: calloc (vg_replace_malloc.c:1117)
+==3524==    by 0x4013AA: main (Lex.c:54)
+==3524== 
+--3524-- REDIR: 0x4ecab70 (libc.so.6:__GI_mempcpy) redirected to 0x4c35860 (__GI_mempcpy)
+--3524-- REDIR: 0x4ec0b60 (libc.so.6:free) redirected to 0x4c2d566 (free)
+==3524== 
+==3524== HEAP SUMMARY:
+==3524==     in use at exit: 0 bytes in 0 blocks
+==3524==   total heap usage: 28 allocs, 28 frees, 1,615 bytes allocated
+==3524== 
+==3524== All heap blocks were freed -- no leaks are possible
+==3524== 
+==3524== ERROR SUMMARY: 24 errors from 2 contexts (suppressed: 0 from 0)
+==3524== 
+==3524== 12 errors in context 1 of 2:
+==3524== Invalid read of size 1
+==3524==    at 0x4C30904: __GI_strlen (vg_replace_strmem.c:470)
+==3524==    by 0x4EA9FB4: fputs (iofputs.c:34)
+==3524==    by 0x401567: main (Lex.c:86)
+==3524==  Address 0x5209816 is 0 bytes after a block of size 6 alloc'd
+==3524==    at 0x4C2F7C8: calloc (vg_replace_malloc.c:1117)
+==3524==    by 0x4013AA: main (Lex.c:54)
+==3524== 
+==3524== 
+==3524== 12 errors in context 2 of 2:
+==3524== Invalid write of size 1
+==3524==    at 0x4C309E3: strcpy (vg_replace_strmem.c:523)
+==3524==    by 0x4013D6: main (Lex.c:55)
+==3524==  Address 0x52095e4 is 0 bytes after a block of size 4 alloc'd
+==3524==    at 0x4C2F7C8: calloc (vg_replace_malloc.c:1117)
+==3524==    by 0x4013AA: main (Lex.c:54)
+==3524== 
+==3524== ERROR SUMMARY: 24 errors from 2 contexts (suppressed: 0 from 0)
