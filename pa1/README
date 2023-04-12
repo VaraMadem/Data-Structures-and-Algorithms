@@ -1,0 +1,10 @@
+List.h - This is the header file for List.c which contains all the headers of the functions
+List.c - This file implements all the functions in List.h, and uses doubly linked lists to be able to move and read through the lists and strings
+ListTest.c - This file tests the functions in List.c
+Lex.c - this is the main file, which reads and sorts through any strings given in a file and outputs the list of strings in alphabetical order
+Makefile
+README
+
+Vara Neha Madem
+1872442
+pa1
