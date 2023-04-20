@@ -1,0 +1,15 @@
+Vara Neha Madem
+vmadem
+pa2
+README
+
+
+
+List.h- header file for List.c from pa1
+List.c - This file impliment all the functions in List.h, and uses doubly linked lists to be able to move and read through the lists and strings
+Graph.h- header file for the graph ADT
+Graph.c - Graph ADT
+GraphTest.c - test file for Graph.c
+FindPath.c - main file of the program, uses the BFS function 
+Makefile
+README
