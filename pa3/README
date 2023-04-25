@@ -1,0 +1,21 @@
+Vara Neha Madem
+vmadem
+pa3
+README
+
+
+To find out the discover/finish times during DFS, I am using time variable in DFS,
+and passing it as argument to helper visit function.
+
+FindComponents.c - finds all strongly connected components of a
+   given graph. 
+Graph.h - header file for Graph.c
+Graph.c - Graph ADT from pa2 with some new functions listed in Graph.h
+GraphTest.c - test file for Graph.c
+List.h - header file for List.c from pa1
+List.c - This file implement all the functions in List.h, and uses doubly linked lists to be able to move and read through the lists and strings- used from pa1
+Makefile - given
+README 
+
+
+
