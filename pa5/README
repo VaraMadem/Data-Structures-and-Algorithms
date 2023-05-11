@@ -1,0 +1,19 @@
+Vara Neha Madem
+vmadem
+pa5
+CSE101 Tantalo
+README
+
+
+This lab uses the List.cpp doubly linked list functions to perform shuffling operations, and determines how many shuffles are necessary to bring a List back into its original order. 
+
+
+List.h- header file for List.cpp: given
+List.cpp - List ADT in C++, doubly linked list of Node objects with vertical cursors
+ListTest.cpp -  test harness for List ADT
+Shuffle.cpp - shuffle function that shuffles deck of size given by user, main file
+README 
+Makefile
+
+
+
