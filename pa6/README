@@ -1,0 +1,21 @@
+Vara Neha Madem
+vmadem
+pa6
+CSE101 Tantalo
+README
+
+
+This lab uses the List.cpp doubly linked list functions to perform shuffling operations, and determines how many shuffles are necessary to bring a List back into its original order. 
+
+
+List.h- header file for List.cpp: given
+List.cpp - List ADT in C++, doubly linked list of Node objects with vertical cursors, long
+ListTest.cpp -  test harness for List ADT
+BigIntegerTest.cpp - A test client for the BigInteger ADT
+BigIntger.h - Header file for the BigInteger ADT
+BigInteger.cpp - BigInteger ADT in C++,list of longs
+Arithmetic.cpp - main file
+README 
+Makefile
+
+Got help from TA's and used the given pseudocode
