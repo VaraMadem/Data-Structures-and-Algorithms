@@ -1,0 +1,18 @@
+Vara Neha Madem
+vmadem
+pa7
+CSE101 Tantalo
+README
+
+
+This lab creates a dictionary with each line from the input file as the key. The values are the line #'s stored.
+
+
+Dictionary.h- header file for Dictionary.cpp: given
+Dictionary.cpp - Dictionary ADT in C++, source code
+DictionaryTest.cpp -  test harness for List ADT
+Order.cpp - main file
+README 
+Makefile
+
+used the given pseudocode and got help from TA's during office hours.
