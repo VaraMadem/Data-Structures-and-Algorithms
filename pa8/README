@@ -1,0 +1,56 @@
+Vara Neha Madem
+vmadem
+pa7
+CSE101 Tantalo
+README
+
+This lab uses the dictionary adt to create a program that orders and prints frequencies.
+used the given pseudocode and got help from TA's during office hours.
+able to run when using ./pa7.sh 1. - but slow
+
+
+
+Order tests: If nothing between '=' signs, then test is passed
+Passed 0 / 5 Order tests
+This gives a total of 0 / 15 points
+
+
+Valgrind
+ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0) 
+
+
+
+WordFrequency tests: If nothing between '=' signs, then test is passed
+Passed 3 / 3 WordFrequency tests
+This gives a total of 9 / 9 points
+
+
+
+Memory Leaks
+ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0) 
+
+
+
+Press Enter To Continue with Dictionary Unit Test
+You passed 16 out of 18 tests
+You will receive 40 out of 45 possible points on the Dictionary Functionality Test
+
+
+
+
+Makefile probably doesn't correctly create Order!!
+Makefile probably correctly creates WordFrequency!
+
+
+
+
+
+Dictionary.h- header file for Dictionary.cpp: given
+Dictionary.cpp - Dictionary ADT in C++, source code
+DictionaryTest.cpp -  test harness for List ADT
+Order.cpp - main file
+WordFrequency.cpp - main file
+README 
+Makefile
+
+
