@@ -1,6 +1,8 @@
 //-----------------------------------------------------------------------------
-// DictionaryClient.cpp
-// A test client for the Dictionary ADT
+// Dictionary.cpp
+// Vara Neha Madem
+// 1872442
+// CSE101 Tantalo pa8
 //-----------------------------------------------------------------------------
 #include <cmath>
 #include <string>
